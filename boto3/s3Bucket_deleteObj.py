@@ -15,7 +15,7 @@ try:
     aws_session_token=credentials['Credentials']['SessionToken']
 )
   s3=session.resource('s3')
-  bucket = s3.Bucket('qa-logs-bucket')
+  bucket = s3.Bucket('logs-bucket')
   for obj in bucket.objects.all():
     if (obj.last_modified).replace(tzinfo = None) < datetime.datetime(2020,1,18):
              #print results
