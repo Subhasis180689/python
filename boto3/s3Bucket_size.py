@@ -23,4 +23,4 @@ for my_bucket_object in my_bucket.objects.all():
  size_byte=size_byte+my_bucket_object.size
 totalsize_gb=size_byte/1000/1024/1024
 print(size_byte)
-print(totalsize_GB)
+print(totalsize_gb)
