@@ -1,3 +1,5 @@
+#install ip Webcam in mobile, start the server and get the ip and put below in Url
+#Open openCv as well in your laptop pip install opencv-python
 import cv2 
 import numpy as np
 url = 'http://192.168.0.103:8080/video'
